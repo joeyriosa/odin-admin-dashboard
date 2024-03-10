@@ -1,0 +1,279 @@
+ * {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+
+ body {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: black;
+ }
+
+ .main-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+ }
+
+ .sidebar-container {
+    background-color: #1992D4;
+    display: grid;
+    width: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto 1fr;
+    padding: 10px;
+    grid-row: 1 / 3;
+ }
+
+ .sidebar-header {
+   font-size: 1.3rem;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   align-items: center;
+   column-gap: 15px;
+   margin-bottom: 30px;
+ }
+
+ .svg-img-dashboard {
+   width: 50px;
+   height: 50px;
+   justify-self: end;
+ }
+
+ .link-sidebar {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   align-items: center;
+   column-gap: 15px;
+   text-decoration: none;
+   margin: 5px 0px;
+ }
+
+ .svg-img {
+    width: 25px;
+    height: auto;
+    justify-self: end;
+ }
+
+ .svg-img-small {
+  width: 20px;
+  margin: 0 10px;
+ }
+
+ .link-text, .dashboard-text {
+    color: white;
+ }
+
+ #settings-link {
+   margin-top: 50px;
+ }
+
+ .svg-button {
+   width: 20px;
+   height: auto;
+   padding: 0;
+   margin: 0;
+   cursor: pointer;
+ }
+
+ .img-avatar {
+   width: 50px;
+   height: auto;
+   border-radius: 50%;
+ }
+
+ .avatar-big {
+  width: 70px;
+ }
+
+ .header-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: stretch;
+  background-color: white;
+ }
+
+ .header-line1 {
+  display: grid;
+  grid-template-columns: 25px auto 1fr 80px auto;
+  align-items: center;
+  padding: 5px 30px 0px 30px;
+ }
+ 
+ .header-line2 {
+  display: grid;
+  grid-template-columns: 80px 1fr auto auto auto;
+  align-items: center;
+  padding: 0px 30px 10px 30px;
+  border-bottom: 5px solid darkgray;
+ }
+
+ input[type="search"] {
+  min-width: 350px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: rgb(247, 241, 241);
+  font-size: 1rem;
+  padding: 2px 5px;
+ }
+
+ input[type="search"]:focus {
+  border: 1px solid lightgray;
+  outline: none;
+ }
+
+ #img-notification {
+  justify-self: end;
+  padding:  20px;
+ }
+
+ button {
+  background-color: #1992D4;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100px;
+  justify-self: end;
+ }
+
+ button:hover {
+  background-color: #0F6AB2;
+ }
+
+ button:last-child {
+  margin-right: 0px;
+ }
+
+ .text-bold {
+  font-weight: bold;
+ }
+
+ .text-small {
+  font-size: 0.7rem;
+ }
+
+ .text-medium {
+  font-size: 0.85rem;
+ }
+
+ .text-big {
+  font-size: 1.2rem;
+ }
+
+ .text-content {
+  color: rgb(107, 104, 104);
+ }
+
+ .text-padding {
+  padding: 10px 0px;
+ }
+
+ .main-content-container {
+  background-color: #E0E6EE;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+ }
+
+ .content-container {
+  display: grid;
+  padding: 20px;
+  grid-template-rows: 30px auto;
+  grid-auto-rows: auto;
+ }
+
+ .content-header {
+  padding-bottom: 10px;
+ }
+
+ .card-container {
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  padding: 10px;
+  gap: 10px;
+ }
+
+ .card-content {
+  border: 1px solid black;
+  border-left: 10px solid orange;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border-radius: 5px;
+  height: auto;
+ }
+
+ .content-button-group {
+  justify-self: end;
+  padding: 10px 0px;
+ }
+
+ .right-bar-container {
+  grid-column: 2 / 3;
+  display: grid;
+  padding-right: 20px;
+  padding-top: 20px;
+  grid-template-rows: 30px auto 40px auto 1fr;
+ }
+
+ .announcement-container {
+  display: grid;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 10px;
+ }
+
+ .announcement-card {
+  padding: 10px 0px;
+  border-bottom: 2px solid lightgray;
+ }
+
+ .announcement-card:nth-child(3) {
+  border: none;
+ }
+
+ .trending-container {
+  display: grid;
+  background-color: white;
+  grid-auto-rows: auto;
+  border-radius: 10px;
+  padding: 20px;
+ }
+
+ .trending-card {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: auto auto;
+  padding: 10px;
+ }
+ 
+ .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  grid-row: 1 / 3;
+  justify-self: end;
+  margin-right: 10px;
+ }
+
+ .pink-circle {
+  background-color: pink;
+ }
+
+ .blue-circle {
+  background-color: skyblue;
+ }
+
+ .green-circle {
+  background-color: lightgreen;
+ }
+
+ 
